@@ -1,0 +1,18 @@
+package j0117;
+
+public class Ja0117_01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Tv t1 = new Tv();
+		t1.color = "red";
+		t1.power = false;
+		t1.channel = 7;
+		
+		t1.power();
+		t1.channelUp();
+		
+		System.out.println("현재 채널 : "+t1.channel);
+	}
+
+}
