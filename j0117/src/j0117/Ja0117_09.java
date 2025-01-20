@@ -16,6 +16,7 @@ public class Ja0117_09 {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
 		Cal2 c = new Cal2();
+		System.out.println(c);
 		while(true) {
 			System.out.println("a 입력");
 			int a = sc.nextInt();
