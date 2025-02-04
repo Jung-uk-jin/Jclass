@@ -111,5 +111,18 @@ public class Stu_Deck_File {
 		if(temp==0) {
 			System.out.println("이름 없음");
 		}
+	}//file_alter
+	void send_file() throws IOException {
+		FileWriter fw = new FileWriter("c:/save/0127stu.txt");
+		BufferedWriter bw = new BufferedWriter(fw);
+		for(int i=0 ; i<list.size() ; i++) {
+			Stu s = list.get(i);
+			String str = String.format("%d,%s,%d,%d,%d,%d,%f,%d\r\n",
+					s.getNo(),s.getName(),s.getKor(),s.getEng(),s.getMat(),
+					s.getTotal(), s.getAvg(), s.getRank());
+			bw.write(str);
+		}
+		bw.close();
+		System.out.println("저장 완료e");
 	}
 }
